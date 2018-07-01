@@ -1,0 +1,21 @@
+Questions from homework assignment
+
+What is an algorithm? Provide some examples, both in the context in of computer science and beyond.
+    An algorithm is a process or set of rules to be followed - dynamic problem solver 
+    In code, it is a segment of code that can respond to different inputs, condidtions, etc
+    For example, the left hand on wall maze solution is an algorithm
+    So are functions like bubble sort and counting the number of times each character appears in a string
+
+What is a heuristic? How do they relate to algorithms?
+    Heuristics are logic or hints that aid in learning, discovery, or problem solving.
+    Use them to create better algorithms ?? Basically it's logic to either help you figure out what you want to do to create an algorithm
+
+What is the brute force method? What are some problems with it?
+    creating an exhaustive search of all possible solutions - for example- trying every possible letter to number combination in cryptography to break the code instead of using heuristics to eliminate possibilities and identifying more likely combinations
+    Typically brute force methods will be too time consuming compared to using heuristics
+
+What is version control? How is it different than simply saving a file?
+    version control keeps a record of every change you commit so that if you break the code or have other reasons that you need to revert back to an older version, you can easily do so
+    Saving a file will only keep a record of what is currently the updated version, whereas version control keeps track of all the times you 'saved' the file and what it consisted of at that time
+What’s the difference between Git and Github?
+    Git 
