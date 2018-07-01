@@ -18,4 +18,20 @@ What is version control? How is it different than simply saving a file?
     version control keeps a record of every change you commit so that if you break the code or have other reasons that you need to revert back to an older version, you can easily do so
     Saving a file will only keep a record of what is currently the updated version, whereas version control keeps track of all the times you 'saved' the file and what it consisted of at that time
 What’s the difference between Git and Github?
-    Git 
+    Git is version control to track the change history of a file in a repository and if necessary review or revert to an older version. 
+    GitHub is a company that provides a place to store and share repositories
+
+Did the git commands on a real sheet of paper so that they're easy to access in my notebook
+
+Why is using the command line so important?
+    more powerful than GUI, can easily navigate between directories and files, can use git/version control
+
+What is the prompt in the context of command line?
+    $ (I"m guessing what we put after the '$' is the prompt - what we're telling the terminal to do)
+
+Shell commands are also on real paper in my notebook
+
+What's the difference between a relative and absolute URLs?
+    Relative URLs do not start with '/' and looks in your current directory 
+    Absolute URLs do start with '/' and list the entire path so it doesn't matter where you are since you give it directions fromt he top of the filesystem
+
