@@ -35,3 +35,24 @@ What's the difference between a relative and absolute URLs?
     Relative URLs do not start with '/' and looks in your current directory 
     Absolute URLs do start with '/' and list the entire path so it doesn't matter where you are since you give it directions fromt he top of the filesystem
 
+What is the difference between parameters and arguments?
+    parameters are the placeholders that you use when defining a function
+    arguments are the actual things you pass through when you call the function
+
+What's the difference between return, break, and print
+    return will give the value/item you're returning to use after a function is called and will leave the entire funciton. can only return one thing from a function
+    break will leave the loop but not necessarily the entire function
+    print displays something 
+
+What does a function return if it doesn't have a return statement?
+    None
+
+What is a default parameter?
+    When you set a parameter as equal to something unless otherwise specified
+    Ex: my_function(parameter='default'):
+            prints parameter
+    This would print 'default' unless something else was passed through
+
+What is scope? What is function scope?
+    scope is where a variable is meaningful. a variable defined within a function can only be used within that function. a variable defined globally can be used within any function (constant variable - which should be defined in UPPER_CASE)
+    the function is so that you don't change something for another function if you name a variable the same as something elsewhere in the code. if it's only in the scope of that function, it won't break the other function
