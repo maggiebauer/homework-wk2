@@ -17,9 +17,10 @@ What is the brute force method? What are some problems with it?
 What is version control? How is it different than simply saving a file?
     version control keeps a record of every change you commit so that if you break the code or have other reasons that you need to revert back to an older version, you can easily do so
     Saving a file will only keep a record of what is currently the updated version, whereas version control keeps track of all the times you 'saved' the file and what it consisted of at that time
+
 What’s the difference between Git and Github?
-    Git is version control to track the change history of a file in a repository and if necessary review or revert to an older version. 
-    GitHub is a company that provides a place to store and share repositories
+    Git is a program of version control to track the change history of a file in a repository and if necessary review or revert to an older version. 
+    GitHub is a company & website that provides a place to store and share repositories
 
 Did the git commands on a real sheet of paper so that they're easy to access in my notebook
 
@@ -56,3 +57,37 @@ What is a default parameter?
 What is scope? What is function scope?
     scope is where a variable is meaningful. a variable defined within a function can only be used within that function. a variable defined globally can be used within any function (constant variable - which should be defined in UPPER_CASE)
     the function is so that you don't change something for another function if you name a variable the same as something elsewhere in the code. if it's only in the scope of that function, it won't break the other function
+
+What are some important Python style considerations for writing functions?
+    use snake case for function name
+    write a docstring underneath the line where you define the functinon useing '''
+        the first line of the docstring should be a quick overview - basically the function's signature -> this function takes in two arguments as numbers and returns the difference
+        then give a blank space 
+        then continue to provide more in depth info if needed
+
+Also have the Python list methods in my notebook
+
+What is mutability?
+    Mutability means that you can edit or make changes in place without rebinding
+
+How is Python memory different than C memory? How are Python variables different than 'classic' variables?
+    Python memory works by binding a name to a value by pointing to where the value is stored in memory. The name can 'move' by pointing to a different location in memory, but will not over-write the original value in memory. In C, variables stay stored in the same spot even if you change the value. The value will be over-written in memory.
+    Variables in Python are really 'identifiers' that tell Python where the thing is stored in memory, and where they are pointing to in memory will change if the variable is reassigned. 
+
+What is garbage collection?
+    In Python, when it's clear that nothing is bound to a value in memory, it will release that from memory. This happens when the program finishes but can also happen during the program.
+
+What is the 'id' function? What does the comparator 'is' do in Python?
+    The 'id' function will tell you where you can find a thing in memory. It will also tell you if two things are bound to the same spot in memory.
+    The 'is' comparator will tell you if two items point to the same spot in memory. Not just that they have equal values but will be directed to the same exact spot in memory.
+
+What are sets good for?
+    Sets are good for storing a group of items in a mutable, iterable, unordered, and unique group. They are faster than lists, and since unique, will not allow for the same thing to be listed more than once. So if you want to know how many unique things exist in a list or want to be more efficient and don't need to know the order, it can be a better choice than other data structures.
+
+Set methods also in notebook
+    You create a set by using curly braces and including the items inside separated by commas, or you can use set() with either a list inside to convert it to a set or leave it empty to create an empty set, since {} is an empty dictionary.
+    If something is in a set, using 'item' in set_variable will return True
+
+What are tuples good for?
+    You create a tuple using parathesis and including it's items inside separated by commas
+    You index a tuple by referencing its indices the same way you would a list, as a tuple is ordered, so the first item would be tuple_variable[0]
