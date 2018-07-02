@@ -195,7 +195,10 @@ def mult_numbers(numbers):
         1
     """
 
-    return None
+    product_of_nums = 1
+    for num in numbers:
+        product_of_nums *= num
+    return product_of_nums
 
 
 def join_strings(words):
@@ -213,8 +216,11 @@ def join_strings(words):
         >>> join_strings([])
         ''
     """
+    string_of_words = ''
+    for word in words:
+        string_of_words += word
 
-    return "Not the right thing"
+    return string_of_words
 
 
 def average(numbers):
@@ -235,8 +241,16 @@ def average(numbers):
     (Think of the best way to handle an empty input list, though,
     a feel free to provide a good solution here.)
     """
+    num_total = 0
+    if len(numbers) > 0:
 
-    return 0
+        for num in numbers:
+            num_total += num
+        average_num = int(num_total) / len(numbers)
+
+    else:
+        return None
+    return average_num
 
 
 def join_strings_with_comma(words):
@@ -256,7 +270,12 @@ def join_strings_with_comma(words):
         'Pretzel'
     """
 
-    return ""
+    string_of_words = ''
+    for i in range(len(words) - 1):
+        string_of_words = string_of_words + words[i] + ', '
+    string_of_words = string_of_words + words[-1]
+
+    return string_of_words
 
 
 def reverse_list(items):
@@ -280,7 +299,8 @@ def reverse_list(items):
         ['apple', 'berry', 'cherry']
     """
 
-    return []
+    lst_reversed = items[::-1]
+    return lst_reversed
 
 
 def reverse_list_in_place(items):
@@ -302,8 +322,8 @@ def reverse_list_in_place(items):
         >>> orig
         ['I', 'love', 'cookies']
     """
-
-    return []
+    items[:] = items[::-1]
+    return items
 
 
 def duplicates(items):
@@ -328,8 +348,17 @@ def duplicates(items):
         >>> orig
         ['apple', 'apple', 'berry']
     """
+    lst_to_check = []
+    lst_of_dups = []
 
-    return []
+    for item in items:
+        if item not in lst_to_check:
+            lst_to_check.append(item)
+        elif item in lst_to_check:
+            if item not in lst_of_dups:
+                lst_of_dups.append(item)
+
+    return sorted(lst_of_dups)
 
 
 def find_letter_indices(words, letter):
@@ -357,7 +386,17 @@ def find_letter_indices(words, letter):
     `None`.)
     """
 
-    return []
+    indices_lst = []
+
+    for word in words:
+        for i in range(len(word)):
+            if word[i] == letter:
+                indices_lst.append(i)
+                break
+        else:
+            indices_lst.append(None)
+
+    return indices_lst
 
 
 #####################################################################
